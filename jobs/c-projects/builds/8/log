@@ -1,0 +1,8 @@
+Started by user [8mha:////4GlRNpAnn9/AfwORrhpUjmciAOpzgHIFhATYkJAXiAZAAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c-projects
+Installing JDK jdk-9.0.4-oth-JPR
+Downloading JDK from https://download.oracle.com/otn/java/jdk/9.0.4+11/c2514751926b4512b076cc82f959763f/jdk-9.0.4_linux-x64_bin.tar.gz
+[8mha:////4AHMnOrRGq5o7DiIlpUdu6UcG9kCXrgTP2rTsTf5VhRqAAAAsh+LCAAAAAAAAP9djDEOgkAQRUeMHsDSeAa2syE0YiFKaDzBBiaIjrub2cFA5R28hjYewuN4BzFY+Zv/mvceb5h4hsWhKb01YWGNt4ThpnPIVJtTbgWX8f0Z39wrgCCFKaGp5JDBuGESmGVHfdGKtKnUXrg2VdQyzP9yyfDfGAwbBQCt6+EqEKkSfcG1E8urLtdnVD9frCUfbte71HjRRMgKjSAnjGUPtaYPq19LNcAAAAA=[0mOracle now requires Oracle account to download previous versions of JDK. Please specify your Oracle account username/password.
+ERROR: Unable to install JDK unless a valid Oracle account username/password is provided in the system configuration.
+Finished: FAILURE

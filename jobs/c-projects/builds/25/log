@@ -1,0 +1,75 @@
+Started by user [8mha:////4GlRNpAnn9/AfwORrhpUjmciAOpzgHIFhATYkJAXiAZAAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building remotely on [8mha:////4Gg2elQWQVh7BoinSf9pQ0R+LI3/BmgOYE/OScC5tea/AAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/eKcxLJUhTyga3WNALa+wETLAAAA[0mslave node-2 in workspace /home/ec2-user/workspace/c-projects
+The recommended git tool is: NONE
+No credentials specified
+ > /usr/bin/git rev-parse --resolve-git-dir /home/ec2-user/workspace/c-projects/.git # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/sandeepreddygit/c-projects.git # timeout=10
+Fetching upstream changes from https://github.com/sandeepreddygit/c-projects.git
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/sandeepreddygit/c-projects.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 64bf29395b2b8f897023c04ee77b3fa32f344e96 (refs/remotes/origin/main)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 64bf29395b2b8f897023c04ee77b3fa32f344e96 # timeout=10
+Commit message: "Delete test"
+ > /usr/bin/git rev-list --no-walk 64bf29395b2b8f897023c04ee77b3fa32f344e96 # timeout=10
+[c-projects] $ /bin/bash /tmp/jenkins8422640143511871749.sh
+/tmp/jenkins8422640143511871749.sh: line 3: cd: /var/lib/jenkins/workspace/c-projects/: No such file or directory
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ main() {
+ ^~~~
+main.c: In function ‘main’:
+main.c:3:2: warning: implicit declaration of function ‘biggest2’ [-Wimplicit-function-declaration]
+  biggest2();
+  ^~~~~~~~
+main.c:4:2: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+  biggest3();
+  ^~~~~~~~
+main.c:5:2: warning: implicit declaration of function ‘sum2’ [-Wimplicit-function-declaration]
+  sum2();
+  ^~~~
+main.c:6:2: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+  factorial();
+  ^~~~~~~~~
+main.c:7:2: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+  reverse();
+  ^~~~~~~
+main.c:8:2: warning: implicit declaration of function ‘palindrome’ [-Wimplicit-function-declaration]
+  palindrome();
+  ^~~~~~~~~~
+main.c:9:2: warning: implicit declaration of function ‘fibonacci’ [-Wimplicit-function-declaration]
+  fibonacci();
+  ^~~~~~~~~
+gcc -c big2.c
+big2.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ biggest2()
+ ^~~~~~~~
+gcc -c fact.c
+fact.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ factorial()
+ ^~~~~~~~~
+gcc -c rev.c
+rev.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ reverse()
+ ^~~~~~~
+gcc -o ABC.exe main.o big2.o fact.o rev.o big3.c fib.c pal.c sort.c sum2.c
+big3.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ biggest3() {
+ ^~~~~~~~
+fib.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ fibonacci() {
+ ^~~~~~~~~
+pal.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ palindrome() {
+ ^~~~~~~~~~
+sort.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ sorting()
+ ^~~~~~~
+sum2.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ sum2() {
+ ^~~~
+Finished: SUCCESS

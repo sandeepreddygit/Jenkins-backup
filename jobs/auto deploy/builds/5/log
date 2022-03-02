@@ -1,0 +1,46 @@
+Started by user [8mha:////4GlRNpAnn9/AfwORrhpUjmciAOpzgHIFhATYkJAXiAZAAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/auto deploy
+The recommended git tool is: NONE
+No credentials specified
+ > /usr/bin/git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/auto deploy/.git # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/sandeepreddygit/hello-world-war.git # timeout=10
+Fetching upstream changes from https://github.com/sandeepreddygit/hello-world-war.git
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/sandeepreddygit/hello-world-war.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 11af6e194f4016a6cbabae475046261214cf3148 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 11af6e194f4016a6cbabae475046261214cf3148 # timeout=10
+Commit message: "Update pom.xml"
+First time build. Skipping changelog.
+[auto deploy] $ mvn mvn pom.xml
+FATAL: command execution failed
+java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+Caused: java.io.IOException: Cannot run program "mvn" (in directory "/var/lib/jenkins/workspace/auto deploy"): error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at hudson.Proc$LocalProc.<init>(Proc.java:252)
+	at hudson.Proc$LocalProc.<init>(Proc.java:221)
+	at hudson.Launcher$LocalLauncher.launch(Launcher.java:996)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:508)
+	at hudson.Launcher$ProcStarter.join(Launcher.java:519)
+	at hudson.tasks.Maven.perform(Maven.java:368)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:803)
+	at hudson.model.Build$BuildExecution.build(Build.java:197)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:513)
+	at hudson.model.Run.execute(Run.java:1906)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Build step 'Invoke top-level Maven targets' marked build as failure
+[DeployPublisher][INFO] Build failed, project not deployed
+Finished: FAILURE

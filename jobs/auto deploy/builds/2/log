@@ -1,0 +1,33 @@
+Started by user [8mha:////4GlRNpAnn9/AfwORrhpUjmciAOpzgHIFhATYkJAXiAZAAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/auto deploy
+The recommended git tool is: NONE
+No credentials specified
+ > /usr/bin/git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/auto deploy/.git # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://github.com/sandeepreddygit/sparkjava-war-example.git # timeout=10
+Fetching upstream changes from https://github.com/sandeepreddygit/sparkjava-war-example.git
+ > /usr/bin/git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > /usr/bin/git fetch --tags --force --progress -- https://github.com/sandeepreddygit/sparkjava-war-example.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 99484298060ecc6d7967293a8d08ff8e3630d80f (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 99484298060ecc6d7967293a8d08ff8e3630d80f # timeout=10
+Commit message: "Add slf4j-simple for logging"
+ > /usr/bin/git rev-list --no-walk 99484298060ecc6d7967293a8d08ff8e3630d80f # timeout=10
+ERROR: Step ‘Deploy war/ear to a container’ aborted due to exception: 
+java.lang.InterruptedException: [DeployPublisher][WARN] No wars found. Deploy aborted. %n
+	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:107)
+	at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:803)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:752)
+	at hudson.model.Build$BuildExecution.post2(Build.java:177)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:697)
+	at hudson.model.Run.execute(Run.java:1931)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Finished: FAILURE
